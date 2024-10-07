@@ -34,6 +34,7 @@
         .background {
             position: fixed;
             width: 100vw;
+            max-width: 100%;
             height: 100vh;
             top: 0;
             left: 0;
@@ -223,34 +224,332 @@
             bottom: -216px;
             animation-delay: 70s;
         }
+
+        .gradient-background {
+            background: linear-gradient(155deg, #4e54c8, #714ec8, #fe00ed);
+            background-size: 180% 180%;
+            animation: gradient-animation 18s ease infinite;
+        }
+
+        @keyframes gradient-animation {
+            0% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+
+            100% {
+                background-position: 0% 50%;
+            }
+        }
     </style>
     <title></title>
 </head>
 
 <body class="font-poppins">
-    <main>
-        <section class="background">
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <section class="h-screen flex items-center justify-center">
-                <div class="text-white text-center">
-                    <h2 class="text-md font-medium">Hi, Visitor!</h2>
-                    <h1 class="text-6xl font-bold uppercase text-white drop-shadow-[0_0_10px_rgba(255,255,255,1)]">
-                        Welcome</h1>
+    <div class="background">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </div>
 
-                    <h2 class="uppercase font-medium text-xl tracking-widest">To XI PPLG</h2>
+    <main>
+        <section class="h-screen flex items-center justify-center relative z-10">
+            <div class="text-white text-center">
+                <h2 class="text-md font-medium md:text-lg">Hi, Visitor!</h2>
+                <h1
+                    class="text-6xl font-bold uppercase text-white drop-shadow-[0_0_10px_rgba(255,255,255,1)] md:text-7xl">
+                    Welcome</h1>
+
+                <h2 class="uppercase font-medium text-xl tracking-widest md:text-2xl">To XI PPLG</h2>
+            </div>
+        </section>
+
+        <section class="relative z-10">
+            <div class="px-10 py-20 space-y-12">
+                <div class="text-center">
+                    <h2 class="text-2xl font-medium uppercase text-white drop-shadow-[0_0_10px_rgba(255,255,255,1)]">
+                        Wonderful
+                    </h2>
+                    <h1
+                        class="text-3xl font-medium uppercase text-white drop-shadow-[0_0_10px_rgba(255,255,255,1)] md:text-5xl">
+                        Class Gallery</h1>
                 </div>
-            </section>
+
+                <div class="grid grid-cols-1 gap-y-6 md:grid-cols-3 md:gap-x-6 md:gap-y-10">
+                    <div
+                        class="aspect-[16/9] bg-black overflow-hidden rounded-lg drop-shadow-[0_0_10px_rgba(255,255,255,1)]">
+                        <img src="{{ asset('images/foto.jpg') }}" alt="Foto"
+                            class="w-full h-full object-cover transition duration-400 opacity-90 hover:scale-110">
+                    </div>
+
+                    <div
+                        class="aspect-[16/9] bg-black overflow-hidden rounded-lg drop-shadow-[0_0_10px_rgba(255,255,255,1)]">
+                        <img src="{{ asset('images/foto.jpg') }}" alt="Foto"
+                            class="w-full h-full object-cover transition duration-400 opacity-90 hover:scale-110">
+                    </div>
+
+                    <div
+                        class="aspect-[16/9] bg-black overflow-hidden rounded-lg drop-shadow-[0_0_10px_rgba(255,255,255,1)]">
+                        <img src="{{ asset('images/foto.jpg') }}" alt="Foto"
+                            class="w-full h-full object-cover transition duration-400 opacity-90 hover:scale-110">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="relative z-10">
+            <div class="px-10 py-20 space-y-10">
+                <div class="text-center">
+                    <h2 class="text-2xl font-medium uppercase text-white drop-shadow-[0_0_10px_rgba(255,255,255,1)]">
+                        Every Day
+                    </h2>
+                    <h1 class="text-3xl font-medium uppercase text-white drop-shadow-[0_0_10px_rgba(255,255,255,1)]">
+                        Schedule
+                    </h1>
+                </div>
+
+                <div class="px-24 space-y-4 lg:px-80">
+                    @php
+                        $currentDay = \Carbon\Carbon::now()->format('l');
+                    @endphp
+
+                    @if ($currentDay == 'Monday')
+                        <div class="text-center">
+                            <div>
+                                <h1
+                                    class="text-xl font-medium uppercase text-white drop-shadow-[0_0_10px_rgba(255,255,255,1)]">
+                                    {{ $currentDay }}</h1>
+                            </div>
+                        </div>
+
+                        <div class="font-medium text-sm text-white drop-shadow-[0_0_10px_rgba(255,255,255,1)]">
+                            <hr class="border border-1">
+                            <div class="flex justify-between my-4">
+                                <p>Sejarah</p>
+                                <p>07:00 - 08:30</p>
+                            </div>
+                            <hr class="border">
+                            <div class="flex justify-between my-4">
+                                <p>Basis Data</p>
+                                <p>08:30 - 10:00</p>
+                            </div>
+                            <hr class="border">
+                            <div class="flex justify-between my-4">
+                                <p>Istirahat</p>
+                                <p>10:00 - 10:20</p>
+                            </div>
+                            <hr class="border">
+                            <div class="flex justify-between my-4">
+                                <p>Basis Data</p>
+                                <p>10:20 - 11:00</p>
+                            </div>
+                            <hr class="border">
+                            <div class="flex justify-between my-4">
+                                <p>PPL</p>
+                                <p>11:00 - 12:20</p>
+                            </div>
+                            <hr class="border">
+                            <div class="flex justify-between my-4">
+                                <p>Istirahat</p>
+                                <p>12:20 - 13:00</p>
+                            </div>
+                            <hr class="border">
+                            <div class="flex justify-between my-4">
+                                <p>PPL</p>
+                                <p>12:20 - 15:00</p>
+                            </div>
+                            <hr class="border">
+                        </div>
+                    @elseif ($currentDay == 'Tuesday')
+                        <div class="text-center">
+                            <div>
+                                <h1
+                                    class="text-xl font-medium uppercase text-white drop-shadow-[0_0_10px_rgba(255,255,255,1)]">
+                                    {{ $currentDay }}</h1>
+                            </div>
+                        </div>
+
+                        <div class="font-medium text-sm text-white drop-shadow-[0_0_10px_rgba(255,255,255,1)]">
+                            <hr class="border border-1">
+                            <div class="flex justify-between my-4">
+                                <p>Agama</p>
+                                <p>07:00 - 09:15</p>
+                            </div>
+                            <hr class="border">
+                            <div class="flex justify-between my-4">
+                                <p>Basis Data</p>
+                                <p>09:15 - 10:00</p>
+                            </div>
+                            <hr class="border">
+                            <div class="flex justify-between my-4">
+                                <p>Istirahat</p>
+                                <p>10:00 - 10:20</p>
+                            </div>
+                            <hr class="border">
+                            <div class="flex justify-between my-4">
+                                <p>Basis Data</p>
+                                <p>10:20 - 12:20</p>
+                            </div>
+                            <hr class="border">
+                            <div class="flex justify-between my-4">
+                                <p>Istirahat</p>
+                                <p>12:20 - 13:00</p>
+                            </div>
+                            <hr class="border">
+                            <div class="flex justify-between my-4">
+                                <p>Bahasa Inggris</p>
+                                <p>12:20 - 15:00</p>
+                            </div>
+                            <hr class="border">
+                        </div>
+                    @elseif ($currentDay == 'Wednesday')
+                        <div class="text-center">
+                            <div>
+                                <h1
+                                    class="text-xl font-medium uppercase text-white drop-shadow-[0_0_10px_rgba(255,255,255,1)]">
+                                    {{ $currentDay }}</h1>
+                            </div>
+                        </div>
+
+                        <div class="font-medium text-sm text-white drop-shadow-[0_0_10px_rgba(255,255,255,1)]">
+                            <hr class="border border-1">
+                            <div class="flex justify-between my-4">
+                                <p>PJOK</p>
+                                <p>07:00 - 08:30</p>
+                            </div>
+                            <hr class="border">
+                            <div class="flex justify-between my-4">
+                                <p>PWPB</p>
+                                <p>08:30 - 10:00</p>
+                            </div>
+                            <hr class="border">
+                            <div class="flex justify-between my-4">
+                                <p>Istirahat</p>
+                                <p>10:00 - 10:20</p>
+                            </div>
+                            <hr class="border">
+                            <div class="flex justify-between my-4">
+                                <p>PWPB</p>
+                                <p>10:20 - 12:20</p>
+                            </div>
+                            <hr class="border">
+                            <div class="flex justify-between my-4">
+                                <p>Istirahat</p>
+                                <p>12:20 - 13:00</p>
+                            </div>
+                            <hr class="border">
+                            <div class="flex justify-between my-4">
+                                <p>PWPB</p>
+                                <p>12:20 - 15:00</p>
+                            </div>
+                            <hr class="border">
+                        </div>
+                    @elseif ($currentDay == 'Thursday')
+                        <div class="text-center">
+                            <div>
+                                <h1
+                                    class="text-xl font-medium uppercase text-white drop-shadow-[0_0_10px_rgba(255,255,255,1)]">
+                                    {{ $currentDay }}</h1>
+                            </div>
+                        </div>
+
+                        <div class="font-medium text-sm text-white drop-shadow-[0_0_10px_rgba(255,255,255,1)]">
+                            <hr class="border border-1">
+                            <div class="flex justify-between my-4">
+                                <p>PBO</p>
+                                <p>07:00 - 10:00</p>
+                            </div>
+                            <hr class="border">
+                            <div class="flex justify-between my-4">
+                                <p>Istirahat</p>
+                                <p>10:00 - 10:20</p>
+                            </div>
+                            <hr class="border">
+                            <div class="flex justify-between my-4">
+                                <p>Bahasa Indonesia</p>
+                                <p>10:20 - 12:20</p>
+                            </div>
+                            <hr class="border">
+                            <div class="flex justify-between my-4">
+                                <p>Istirahat</p>
+                                <p>12:20 - 13:00</p>
+                            </div>
+                            <hr class="border">
+                            <div class="flex justify-between my-4">
+                                <p>Matematika</p>
+                                <p>12:20 - 15:00</p>
+                            </div>
+                            <hr class="border">
+                        </div>
+                    @elseif ($currentDay == 'Friday')
+                        <div class="text-center">
+                            <div>
+                                <h1
+                                    class="text-xl font-medium uppercase text-white drop-shadow-[0_0_10px_rgba(255,255,255,1)]">
+                                    {{ $currentDay }}</h1>
+                            </div>
+                        </div>
+
+                        <div class="font-medium text-sm text-white drop-shadow-[0_0_10px_rgba(255,255,255,1)]">
+                            <hr class="border border-1">
+                            <div class="flex justify-between my-4">
+                                <p>PPKN</p>
+                                <p>07:00 - 08:15</p>
+                            </div>
+                            <hr class="border border-1">
+                            <div class="flex justify-between my-4">
+                                <p>P5</p>
+                                <p>08:15 - 09:30</p>
+                            </div>
+                            <hr class="border">
+                            <div class="flex justify-between my-4">
+                                <p>Istirahat</p>
+                                <p>09:30 - 09:50</p>
+                            </div>
+                            <hr class="border">
+                            <div class="flex justify-between my-4">
+                                <p>Mandarin</p>
+                                <p>09:50 - 11:00</p>
+                            </div>
+                            <hr class="border">
+                        </div>
+                    @else
+                        <div class="text-center">
+                            <div>
+                                <h1
+                                    class="text-xl font-medium uppercase text-white drop-shadow-[0_0_10px_rgba(255,255,255,1)]">
+                                    {{ $currentDay }}</h1>
+                            </div>
+                        </div>
+
+                        <div class="font-medium text-sm text-white drop-shadow-[0_0_10px_rgba(255,255,255,1)]">
+                            <hr class="border border-1">
+                            <div class="flex justify-between my-4">
+                                <p>Belajar Di Rumah</p>
+                                <p>07:00 - 15:00</p>
+                            </div>
+                            <hr class="border border-1">
+                        </div>
+                    @endif
+                </div>
+            </div>
         </section>
     </main>
+
+
+
+
+
 
     {{-- Flowbite CDN --}}
     <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
