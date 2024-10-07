@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="icon" type="image" href="{{ asset('images/pplglogo.png') }}"  />
+    <link rel="icon" type="image" href="{{ asset('images/pplglogo.png') }}" />
     {{-- <meta name="google-site-verification" content="WHLWQb7_hoW3fRhZ2XmOLPpfN2EubRtyQmTEq6JmpdA" /> --}}
     <title>XI PPLG</title>
 
@@ -34,6 +34,8 @@
     <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css" rel="stylesheet" />
     {{-- TailwindCSS --}}
     @vite('resources/css/app.css')
+    {{-- DataAOS Library CSS --}}
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     {{-- CSS Vanilla from public --}}
     <style>
         @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
@@ -302,28 +304,29 @@
         <section class="relative z-10">
             <div class="px-10 py-20 space-y-12">
                 <div class="text-center">
-                    <h2 class="text-2xl font-medium uppercase text-white drop-shadow-[0_0_10px_rgba(255,255,255,1)]">
+                    <h2 data-aos="fade-up"
+                        class="text-2xl font-medium uppercase text-white drop-shadow-[0_0_10px_rgba(255,255,255,1)]">
                         Wonderful
                     </h2>
-                    <h1
+                    <h1 data-aos="fade-up" data-aos-delay="400"
                         class="text-3xl font-medium uppercase text-white drop-shadow-[0_0_10px_rgba(255,255,255,1)] md:text-5xl">
                         Class Gallery</h1>
                 </div>
 
                 <div class="grid grid-cols-1 gap-y-6 md:grid-cols-3 md:gap-x-6 md:gap-y-10">
-                    <div
+                    <div data-aos="zoom-in"
                         class="aspect-[16/9] bg-black overflow-hidden rounded-lg drop-shadow-[0_0_10px_rgba(255,255,255,1)]">
                         <img src="{{ asset('images/1.jpg') }}" alt="Foto"
                             class="w-full h-full object-cover transition duration-400 opacity-90 hover:scale-110">
                     </div>
 
-                    <div
+                    <div data-aos="zoom-in" data-aos-delay="400"
                         class="aspect-[16/9] bg-black overflow-hidden rounded-lg drop-shadow-[0_0_10px_rgba(255,255,255,1)]">
                         <img src="{{ asset('images/2.jpg') }}" alt="Foto"
                             class="w-full h-full object-cover transition duration-400 opacity-90 hover:scale-110">
                     </div>
 
-                    <div
+                    <div data-aos="zoom-in" data-aos-delay="1000"
                         class="aspect-[16/9] bg-black overflow-hidden rounded-lg drop-shadow-[0_0_10px_rgba(255,255,255,1)]">
                         <img src="{{ asset('images/3.jpg') }}" alt="Foto"
                             class="w-full h-full object-cover transition duration-400 opacity-90 hover:scale-110">
@@ -335,15 +338,17 @@
         <section class="relative z-10">
             <div class="px-10 py-20 space-y-10">
                 <div class="text-center">
-                    <h2 class="text-2xl font-medium uppercase text-white drop-shadow-[0_0_10px_rgba(255,255,255,1)]">
+                    <h2 data-aos="fade-up"
+                        class="text-2xl font-medium uppercase text-white drop-shadow-[0_0_10px_rgba(255,255,255,1)]">
                         Every Day
                     </h2>
-                    <h1 class="text-3xl font-medium uppercase text-white drop-shadow-[0_0_10px_rgba(255,255,255,1)]">
+                    <h1 data-aos="fade-up" data-aos-delay="400"
+                        class="text-3xl font-medium uppercase text-white drop-shadow-[0_0_10px_rgba(255,255,255,1)]">
                         Schedule
                     </h1>
                 </div>
 
-                <div class="px-24 space-y-4 lg:px-80">
+                <div class="px-24 space-y-4 lg:px-80" data-aos="zoom-in" data-aos-delay="1000">
                     @php
                         $currentDay = \Carbon\Carbon::now()->format('l');
                     @endphp
@@ -659,9 +664,13 @@
         </div>
     </footer>
 
-
     {{-- Flowbite CDN --}}
     <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
+    {{-- DataAOS Library JS --}}
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({});
+    </script>
 </body>
 
 </html>
