@@ -5,6 +5,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" type="image" href="{{ asset('images/pplglogo.png') }}"  />
+    {{-- <meta name="google-site-verification" content="WHLWQb7_hoW3fRhZ2XmOLPpfN2EubRtyQmTEq6JmpdA" /> --}}
+    <title>XI PPLG</title>
+
+    <!-- Primary Meta Tags -->
+    <meta name="title" content="XI PPLG" />
+    <meta name="description"
+        content="Selamat datang di halaman resmi kelas XI PPLG SMK Negeri 3 Singkawang! Mari mengenal lebih dekat tentang kami, siswa-siswi kelas XI PPLG, yang tertarik pada Pengembangan Perangkat Lunak & Gim." />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://pplgxcode.biz.id/" />
+    <meta property="og:title" content="XI PPLG />
+    <meta property="og:description"
+        content="Selamat datang di halaman resmi kelas XI PPLG SMK Negeri 3 Singkawang! Mari mengenal lebih dekat tentang kami, siswa-siswi kelas XI PPLG, yang tertarik pada Pengembangan Perangkat Lunak & Gim." />
+    <meta property="og:image" content="{{ asset('images/pplglogo.png') }}" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://pplgxcode.biz.id/" />
+    <meta property="twitter:title" content="XI TKJ 3" />
+    <meta property="twitter:description"
+        content="Selamat datang di halaman resmi kelas XI PPLG SMK Negeri 3 Singkawang! Mari mengenal lebih dekat tentang kami, siswa-siswi kelas XI PPLG, yang tertarik pada Pengembangan Perangkat Lunak & Gim." />
+    <meta property="twitter:image" content="{{ asset('images/pplglogo.png') }}" />
+
     {{-- Flowbite CDN --}}
     <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css" rel="stylesheet" />
     {{-- TailwindCSS --}}
@@ -288,19 +313,19 @@
                 <div class="grid grid-cols-1 gap-y-6 md:grid-cols-3 md:gap-x-6 md:gap-y-10">
                     <div
                         class="aspect-[16/9] bg-black overflow-hidden rounded-lg drop-shadow-[0_0_10px_rgba(255,255,255,1)]">
-                        <img src="{{ asset('images/foto.jpg') }}" alt="Foto"
+                        <img src="{{ asset('images/1.jpg') }}" alt="Foto"
                             class="w-full h-full object-cover transition duration-400 opacity-90 hover:scale-110">
                     </div>
 
                     <div
                         class="aspect-[16/9] bg-black overflow-hidden rounded-lg drop-shadow-[0_0_10px_rgba(255,255,255,1)]">
-                        <img src="{{ asset('images/foto.jpg') }}" alt="Foto"
+                        <img src="{{ asset('images/2.jpg') }}" alt="Foto"
                             class="w-full h-full object-cover transition duration-400 opacity-90 hover:scale-110">
                     </div>
 
                     <div
                         class="aspect-[16/9] bg-black overflow-hidden rounded-lg drop-shadow-[0_0_10px_rgba(255,255,255,1)]">
-                        <img src="{{ asset('images/foto.jpg') }}" alt="Foto"
+                        <img src="{{ asset('images/3.jpg') }}" alt="Foto"
                             class="w-full h-full object-cover transition duration-400 opacity-90 hover:scale-110">
                     </div>
                 </div>
