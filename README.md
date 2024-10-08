@@ -1,4 +1,4 @@
-## Class Profile Website Template - Laravel, TailwindCSS, Flowbite Framework
+## Class Profile Website Template - Laravel and TailwindCSS
 
 ![Project Showcase](./public/images/showcase.png)
 Free template for class profile made using Laravel, TailwindCSS, and Flowbite!  
