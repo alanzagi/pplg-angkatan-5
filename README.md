@@ -12,7 +12,7 @@ It is a fully responsive template which you can use for your class or maybe for 
 - SEO friendly
 - Includes basic class profile structure: Home, Gallery, Schedule
 
-### Installation ⚙️
+## Installation ⚙️
 - Clone the repository
 ```
 git clone https://github.com/alanzagi/pplg-angkatan-5.git
@@ -40,12 +40,20 @@ php artisan serve
 ```
 - Done
 
+## Contributing 🤝
+Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the Branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
 ## Support Me ❤️
 Here to support me on [Trakteer](https://trakteer.id/alan_zagi)  
 You can start supporting by buying me an ice cream 🍦  
 start from Rp10.000 / 0.64 USD. Thank you very much! 🙏
 
-# Business inquiries 💼
+## Business inquiries 💼
 If you need my services, like deployment this website to online,  
 you can start talk to me for business cooperation.  
 Click the [Link](https://linktr.ee/alanzagi) to start message me.
@@ -57,5 +65,4 @@ Click the [Link](https://linktr.ee/alanzagi) to start message me.
 4. [DataAOS for Scroll Animation](https://github.com/michalsnik/aos)
 
 ## License ©️
-
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
