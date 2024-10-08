@@ -1,4 +1,4 @@
-## (Company) Class Profile Website Template - Laravel, TailwindCSS, Flowbite Framework 🎓  
+## Class Profile Website Template - Laravel, TailwindCSS, Flowbite Framework 🎓  
 ![Project Showcase](./public/images/showcase.png)
 Free template for class profile made using Laravel, TailwindCSS, and Flowbite!  
 It is a fully responsive template which you can use for your class or maybe for your own portfolio website.
@@ -41,11 +41,16 @@ php artisan serve
 - Done
 
 ## Support Me ❤️
-Support me on Trakteer (https://trakteer.id/alan_zagi)  
-You can start supporting by buying me an ice cream 🍦 for Rp10.000 / 0.64 USD.  
-Thank you very much! 🙏
+Here support me on [Trakteer](https://trakteer.id/alan_zagi)  
+You can start supporting by buying me an ice cream 🍦  
+start from Rp10.000 / 0.64 USD. Thank you very much! 🙏
 
-## Resource Used 🛠️
+# Business inquiries 💼
+If you need my services, like deployment this website to online,  
+you can start talk to me for business cooperation.  
+Click the [Link](https://linktr.ee/alanzagi) to start message me.
+
+## Resources Used 🛠️
 1. [Laravel v11](https://laravel.com/docs/11.x)
 2. [Tailwind CSS v3.4.13](https://tailwindcss.com/docs/installation)
 3. [Flowbite v2.5.2](https://flowbite.com/docs/getting-started/introduction/)
