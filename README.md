@@ -16,11 +16,28 @@ It is a fully responsive template which you can use for your class or maybe for 
 ```
 git clone https://github.com/alanzagi/pplg-angkatan-5.git
 ```
-- I'm using CDN while developing this website so you just have to run the Laravel itself
+- Navigate to the Project Directory
 ```
 cd pplg-angkatan-5
+```
+- Install Dependencies
+```
+composer install
+npm install
+```
+- Configure Environment Variables
+```
+cp .env.example .env
+```
+- Build Frontend Assets with TailwindCSS
+```
+npm run dev
+```
+- Start the Development Server
+```
 php artisan serve
 ```
+- Done
 
 ## Support Me ❤️
 Support me on Trakteer (https://trakteer.id/alan_zagi)  
