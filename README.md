@@ -41,7 +41,7 @@ php artisan serve
 - Done
 
 ## Support Me ❤️
-Here support me on [Trakteer](https://trakteer.id/alan_zagi)  
+Here to support me on [Trakteer](https://trakteer.id/alan_zagi)  
 You can start supporting by buying me an ice cream 🍦  
 start from Rp10.000 / 0.64 USD. Thank you very much! 🙏
 
