@@ -348,7 +348,7 @@
                     </h1>
                 </div>
 
-                <div class="px-24 space-y-4 lg:px-80" data-aos="zoom-in" data-aos-delay="1000">
+                <div class="px-10 space-y-4 lg:px-80" data-aos="zoom-in" data-aos-delay="1000">
                     @php
                         $currentDay = \Carbon\Carbon::now()->format('l');
                     @endphp
